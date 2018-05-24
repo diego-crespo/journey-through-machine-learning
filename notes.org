@@ -1,0 +1,112 @@
+*Machine-Learning*- Programming computers so that they may learn from data
+  - Gives computers the ability to learn without being explicitly programmed 
+
+*3 categories*
+1.(Trained)Supervised, Unsupervised, semisupervised, and Reinforcement Learning
+2.(Online vs Batched) Whether or not they can learn incrementally or on the fly
+3.(Instance-based vs model-based), comparing new data points to known data
+points, or instead detect patterns in the training data and build a predictive
+model.
+
+
+*Supervised Learning*
+*Supervised*- Training data you feed to the algorithm includes the desired
+solutions /labels/.
+*Examples*
+- K-Nearest Neighbor
+- Linear Regression
+- Support Vector Machines (SVMs)
+- Decision Trees and Random Forests
+- Neural Networks
+- Classification (spam email)
+
+
+
+Predict a target numeric value. Such as price of a car given a set of 
+/features/ called /predictors/ This is called /regression/
+
+/attribute/ is a datatype. /feature/ is /attribute/ + value. IE mileage = 15k
+
+*logistic regression* commonly used for classification. Output of probability
+of belonging to a given class. 
+
+*Unsupervised Learning*
+*Unsupervised* Data is unlabeled. 
+*Examples*
+=Clustering=
+- K-Means
+- Hierarchical Cluster Analysis (HCA)
+- Expectation Maximization
+
+=Visualization=
+- Principal Component Analysis
+- Kernel PCA
+- Locally-Linear Embedding (LLE)
+- t-distributed Stochastic Neighbor Embedding (t-SNE)
+
+=Associated rule Learning=
+- Apriori
+- Eclat
+
+*Example 2*
+Data about Blogs visitors. Run a /clustering/ algorithm
+to try to detect groups of similar visitors. It might
+notice that 40% of your visitors are males who love
+comics and visit in the evening. While 20% are sci-fi
+lovers who visit during the weekend. If you use
+/hierarchical clustering/ it may also subdivide each
+group into smaller gorups. 
+
+*Visualization* - feed them lots of complex and unlabled
+data. Output an 2d or 3d representation of your data
+that can easily be plotted. The algorithms try to
+preserve as much of the structure of the data as
+possible.
+
+*Dimensionality reduction* - simplify the data without
+using too much information. IE Merge several correlated
+features into one. IE Mileage correlated with age in a
+car. Dimensionality reduction my merge into a single
+/feature/ called wear and tear. This is called 
+/feature extraction/
+
+
+*Anomaly Detection* detecting unusual credit card to
+prevent fraud, or automatically removing outliers
+from a dataset before feeding it to another learning
+algorithm.
+  trained with a normal instance and given a new
+  instance. Then sees if new instance is an anomaly
+
+
+*Associated rule Learning* Goal is to dig into large
+amounts of data and discover interesting relations
+between attributes.
+  run a supermarket. Find out people who purchase
+  bbq sauce and potato chips tend to buy steak.
+  Thus you may want to put those items close to
+  each other
+
+*Semisupervised*
+Partially labeled dataset and semi-labeled dataset.
+*Examples*
+- Deep Belief networks- Unsupervised comp based on
+  restricted Boltzmann Machines (RBMS). Fine tuned
+  Using supervised techniques
+ 
+Google photos. Upload picture of family and it
+recognizes that same person appears in photo 1,5,11
+Now you just need to tell it what that person is
+and it will label that person in the other photos
+
+
+*Reinforcement Learning*
+Learning System called the /agent/ can observe
+the env, select and perform actions, and get 
+/rewards/ or /penalties/ in return. It must
+learn by itself what the best strategy is, called
+a /policy/
+
+*Examples*
+- Robots learning to walk
+- DeepMind's AlphaGo
